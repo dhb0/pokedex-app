@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+.navbar {
+  padding: 0;
+  background-color: #ef5350;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.navbar ul > li > a.nav-link {
+  color: white;
+  padding: 20px 30px !important;
+  font-size: 1.3rem;
+  font-weight: 500;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul > li > a.nav-link:hover {
+  background-color: #d32b2b;
+  border-bottom: 4px solid #feca1b;
+  padding-bottom: 16px !important;
+}
+
+.navbar a.active {
+  background-color: #d32b2b;
+}
+
+.navbar .custom-toggler.navbar-toggler {
+  border-color: white;
+  margin: 15px 10px;
+}
+
+.navbar .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.input-field {
+  margin-top: 80px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.input-field input {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  font-size: 1.2rem;
+}
+
+.input-field input:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.display-area {
+  margin-top: 70px;
+}
+
+.display-area .list-group-item a {
+  color: #d32b2b;
+}
+
+.display-area .list-group-item:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 40px;
+}
+
+.pagination .page-link {
+  color: #ef5350;
+}
+
+.pagination .page-item.active a {
+  background-color: #d32b2b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #d32b2b;
+}
+
+.breadcrumb-item a {
+  color: #d32b2b;
+}
+
+.poke-details .card-img-top {
+  width: 30%;
+  min-width: 300px;
+}
+
+.poke-details .card-footer img {
+  width: 60px;
+}
+
+.poke-details .list-group-item {
+  font-size: 1.2rem;
+}
+
+.poke-details .list-group {
+  width: 50%;
+  min-width: 250px;
+}
+
+.poke-details li:hover {
+  background-color: #f7f7f7;
+}
+
+.poke-details button > a {
+  color: inherit;
+}
+
+.card-deck {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.card-deck img {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.card-deck img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.no-item {
+  margin-bottom: 55vh;
+}
+
+.container {
+  position: relative;
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  z-index: 10;
+  width: 50%;
+  min-width: 300px;
+}
+
+.footer {
+  background-color: #ef5350;
+}
+
+.footer .container {
+  overflow: hidden;
+}
+
+.footer P {
+  color: white;
+  padding: 20px 0 10px 0;
+}
+/*# sourceMappingURL=index.css.map */

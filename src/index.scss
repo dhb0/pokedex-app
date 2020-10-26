@@ -1,0 +1,171 @@
+$primary_color: #ef5350;
+$secondary_color: #d32b2b;
+$theme_yellow: #feca1b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cabin Condensed", sans-serif;
+}
+//Navbar Area
+.navbar {
+  padding: 0;
+  background-color: $primary_color;
+  img {
+    height: 40px;
+  }
+  ul > li > a.nav-link {
+    color: white;
+    padding: 20px 30px !important;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: $secondary_color;
+      border-bottom: 4px solid $theme_yellow;
+      padding-bottom: 16px !important;
+    }
+  }
+  a.active {
+    background-color: $secondary_color;
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: white;
+    margin: 15px 10px;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+//Search Input Area
+.input-field {
+  margin-top: 80px;
+  max-width: 600px;
+  min-width: 300px;
+  input {
+    outline: none;
+    box-shadow: none !important;
+    font-size: 1.2rem;
+    &:focus {
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+}
+
+//Display Area
+.display-area {
+  margin-top: 70px;
+  .list-group-item {
+    a {
+      color: $secondary_color;
+    }
+    &:hover {
+      background-color: rgb(247, 247, 247);
+      cursor: pointer;
+    }
+  }
+}
+
+//Pagination Customization
+.pagination {
+  margin-top: 40px;
+  .page-link {
+    color: $primary_color;
+  }
+  .page-item.active {
+    a {
+      background-color: $secondary_color;
+      box-shadow: none;
+      border-color: $secondary_color;
+    }
+  }
+}
+
+//Breadcrumb
+.breadcrumb-item {
+  a {
+    color: $secondary_color;
+  }
+}
+
+//PokemonDetails
+.poke-details {
+  .card-img-top {
+    width: 30%;
+    min-width: 300px;
+  }
+  .card-footer {
+    img {
+      width: 60px;
+    }
+  }
+
+  .list-group-item {
+    font-size: 1.2rem;
+  }
+
+  .list-group {
+    width: 50%;
+    min-width: 250px;
+  }
+
+  li:hover {
+    background-color: rgb(247, 247, 247);
+  }
+
+  button > a {
+    color: inherit;
+  }
+}
+
+//Styling Single Poke Cards in MyPokemons
+
+.card-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  img {
+    transition: 0.4s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      filter: brightness(0.7);
+    }
+  }
+}
+.no-item{
+  margin-bottom:55vh;
+}
+//Alert
+.container{
+  position:relative
+}
+.alert{
+  position:fixed;
+  top:80px;
+  z-index:10;
+  width:50%;
+  min-width:300px;
+}
+//Footer
+
+.footer {
+  background-color: $primary_color;
+  .container{
+    overflow:hidden;
+  }
+  P {
+    color: white;
+    padding: 20px 0 10px 0;
+  }
+}
